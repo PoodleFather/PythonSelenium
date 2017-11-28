@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>10dd3a59-d3f7-4184-82fe-f54fc02ea406</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>RunningAdOrder.py</StartupFile>
+    <StartupFile>DoOrder.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,7 +22,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="RunningAdOrder.py" />
+    <Compile Include="DoOrder.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrderProc.py" />
     <Compile Include="WebFroxy.py">
       <SubType>Code</SubType>
     </Compile>

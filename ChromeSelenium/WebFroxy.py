@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-class WebFroxy():    
+class WebFroxy():
     browser = webdriver.Chrome('c:/chromedriver/chromedriver.exe')
     wait  = WebDriverWait(browser, 5)
 
@@ -22,6 +22,12 @@ class WebFroxy():
 
     def doClickById(self,id):
         self.wait.until(EC.presence_of_element_located((By.ID, id))).click()
+    
+    def doClickByClassName(self, className):
+        self.wait.until(EC.presence_of_element_located((By.CLASS_NAME,className))).click()
+
+    def doClickByCssSelector(self, seletor):
+        self.wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, seletor))).click()
 
     def setValueByName(self, name, val):
         self.wait.until(EC.presence_of_element_located((By.NAME, name))).send_keys(val)
