@@ -42,7 +42,7 @@ class OrderProc():
         insertCartBtnId = 'buttonToCart'
         orderBtnId = 'buttonToOrder'
         saveDeliveryLinkCssSelector = '.saveDeliveryInfo'
-        payTypeSeleteFrexCssSelector = '.frex'
+        payTypeSeleteFrexCssSelector = 'input[value="TELEGRAM_FREX_REQUEST"]'
         orderConfirmBtnId = 'OrderConfirmButton'
         layerPopupCloseBtnCssSelector = '.ui-icon-closethick'
 

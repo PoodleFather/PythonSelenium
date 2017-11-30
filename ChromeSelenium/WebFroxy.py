@@ -6,7 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 class WebFroxy():
     browser = webdriver.Chrome('c:/chromedriver/chromedriver.exe')
-    wait  = WebDriverWait(browser, 5)
+    wait  = WebDriverWait(browser, 10)
 
     def openBrowser(self, link):
         self.browser.get(link)
